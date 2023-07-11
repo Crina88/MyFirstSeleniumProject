@@ -38,6 +38,7 @@ public class Checkboxes {
             checkbox2.click();
         }
         Assert.assertFalse(checkbox2.isSelected());
+
         driver.close();
 
 

@@ -19,6 +19,7 @@ public class Login {
 
         //enter username
         WebElement usernameInput = driver.findElement(By.id("username"));
+        usernameInput.clear();
         usernameInput.sendKeys("tomsmith");
 
         //enter password
@@ -46,7 +47,7 @@ public class Login {
         Assert.assertTrue(logoutButton.isDisplayed());
 
         //close
-      // driver.close();
+       driver.close();
     }
 
 
