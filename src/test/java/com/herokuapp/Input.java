@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Input{
@@ -20,6 +21,8 @@ public class Input{
         input.click();
         input.sendKeys("55555555555");
         input.clear();
+
+        Assert.assertTrue(input.isDisplayed());
         driver.close();
     }
 }

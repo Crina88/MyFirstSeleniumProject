@@ -29,6 +29,7 @@ public class Upload {
         WebElement headerMassage = driver.findElement(By.xpath("//*[@id=\"content\"]/div/h3"));
         String text = "File Uploaded!";
         Assert.assertTrue(headerMassage.getText().contains("File Uploaded!"));
+
         WebElement uploadedFilesList = driver.findElement(By.id("uploaded-files"));
         Assert.assertTrue(uploadedFilesList.getText().contains("upload.txt"));
         driver.close();
