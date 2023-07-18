@@ -5,8 +5,8 @@
     <test name="Successful Login">
         
         <parameter name="user"    value = "tomsmith"/>
-        <parameter name="pass"    value="SuperSecretPassword"/>
-        <parameter name="msg"     value="You logged into a secure area"/>
+        <parameter name="pass"    value="SuperSecretPassword!"/>
+        <parameter name="msg"     value="You logged into a secure area!"/>
 
         <classes>
             <class name="com.herokuapp.LoginWithParameters"/>

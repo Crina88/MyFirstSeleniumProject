@@ -58,7 +58,7 @@ public class LoginWithParameters {
        Assert.assertTrue(alert.getText().contains(message));
 
     }
-    @AfterMethod(alwaysRun = false)
+    @AfterMethod(alwaysRun = true)
     public void tearDown(){
         //close browser
         driver.close();
